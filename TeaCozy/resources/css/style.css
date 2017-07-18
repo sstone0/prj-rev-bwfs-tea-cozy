@@ -1,0 +1,167 @@
+/*sets margin, fonts, opacity and background for the entire webpage.*/
+
+html, body, header {
+  margin: 0 auto;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background: black;
+  opacity: 0.9;
+}
+
+
+/*header holding the logo and nav bar*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 69px;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+}
+
+#logo img {
+  padding: 10px;
+  height: 50px;
+  width: auto;
+}
+
+
+/*styles the navigation bar on the right*/
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 15px;
+}
+
+a {
+  color: seashell;
+}
+
+
+/*styles the main content area that will hold all of the content*/
+
+.main {
+  width: 1200px;
+  margin: auto;
+  top: 70px;
+  z-index: 10;
+}
+
+
+/*styles the hero image/div*/
+
+.hero {
+  width: 100%;
+  height: 700px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.mission {
+  text-align: center;
+  background-color: black;
+}
+
+
+/*styles the tea section and all of the divs inside*/
+
+.teaSection {
+  width: 1000px;
+  margin: 50px auto 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.teaKinds {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.tea {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tea img {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+
+
+/*styles the location div and the divs inside*/
+
+.locations {
+  width: 100%;
+  height: 500px;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  margin: 0 auto;
+}
+
+
+/*this div holds the smaller location divs that are flex containers*/
+
+.location-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.location {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 15px 20px 0px 20px;
+}
+
+
+/*styles the contact div outside the main div*/
+
+.contact {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/*lastly the footer is at the bottom with text on the left of the screen*/
+
+footer {
+  text-align: left;
+  margin-left: 20px;
+  z-index: 10;
+}
